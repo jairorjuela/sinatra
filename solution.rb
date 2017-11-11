@@ -1,13 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  erb :home
+  "<h1>HcUy6Re2LLBRtj</h1>"
 end
 
-post '/views/:name' do
-  @name = params[:nick]
-  erb :index
-end
+
 
 
 
@@ -89,4 +86,9 @@ end
 #     else
 #       "Hola desconocido!"
 #     end
+# end
+
+# post '/views/:name' do
+#   @name = params[:nick]
+#   erb :index
 # end
