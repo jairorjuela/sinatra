@@ -1,0 +1,13 @@
+<h1>Hola</h1>
+
+
+  <%@num=0%>
+  <%loop do%>
+    <%@num+=1%>
+      <%if @num%2==0%>
+        <h2><%=@num%> Soy Par!</h2>
+      <%else%>
+        <h2><%=@num%> Soy Impar!</h2>
+      <%end%>
+    <%break if @num==10%>
+  <%end%>
