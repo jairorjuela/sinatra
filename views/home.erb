@@ -1,13 +1,4 @@
-<h1>Hola</h1>
+<h1>Mi cuenta es: <span id="clicks">0</span></h1>
 
 
-  <%@num=0%>
-  <%loop do%>
-    <%@num+=1%>
-      <%if @num%2==0%>
-        <h2><%=@num%> Soy Par!</h2>
-      <%else%>
-        <h2><%=@num%> Soy Impar!</h2>
-      <%end%>
-    <%break if @num>=50%>
-  <%end%>
+<input onclick="javascript:clickLink();" type="submit" value="Suma!!">
