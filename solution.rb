@@ -1,10 +1,16 @@
 require 'sinatra'
 
+  suma = 0
+
 get '/' do
-erb :home
+  @suma = suma
+  erb :home
 end
 
-
+post '/' do
+  suma = suma + 1
+  redirect '/'
+end
 
 
 
