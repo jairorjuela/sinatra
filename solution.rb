@@ -1,15 +1,8 @@
 require 'sinatra'
 
-  suma = 0
-
 get '/' do
-  @suma = suma
+  @number = params[:number]
   erb :home
-end
-
-post '/' do
-  suma = suma + 1
-  redirect '/'
 end
 
 
