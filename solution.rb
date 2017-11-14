@@ -1,11 +1,13 @@
 require 'sinatra'
 
 get '/' do
-  @number = params[:number]
   erb :home
 end
 
-
+post '/views/:word' do
+  @word = params[:phrase]
+  erb :index
+end
 
 
 
