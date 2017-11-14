@@ -1,7 +1,5 @@
-<h1>Abuela Sorda</h1>
 
-  <form action="/views/<%= :word %>" method="post">
-    <p>Di algo Abuela:</p>
-    <input type="text" name="<%= :phrase %>">
-    <input type="submit" value="Dilo!">
-  </form>
+<% if :HTTP_USER_AGENT? %>
+<h1><%= @browser %></h1>
+<% end  %>
+<h1>h</h1>

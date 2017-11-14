@@ -1,20 +1,22 @@
 require 'sinatra'
 
 get '/' do
+  @browser = request.env["HTTP_USER_AGENT"]
   erb :home
 end
 
-post '/views/:word' do
-  @word = params[:phrase]
-  erb :index
-end
-
-
-
-
-
-
-
+#
+# get '/', :agent => /Google (\d\.\d)[\d\/]*?/ do
+#   "Estás usando la versión de Songbird #{params['agent'][0]}"
+# end
+#
+# get '/' do
+#   "<h1>h</h1>"
+#   # Coincide con navegadores que no sean songbird
+# end
+# @contact.user_agent = request.env["HTTP_USER_AGENT"]
+# @browser = params[:HTTP_USER_AGENT]
+# # /Songbird (\d\.\d)[\d\/]*?/
 
 
 
